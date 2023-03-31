@@ -1,0 +1,26 @@
+Every resource I used to get multiple >$500k software engineering offers
+In 2022, I interviewed at nine companies and received seven offers; several of them offered total compensation over $500,000. Here is a list of all the resources I used to prepare for technical interviews.
+
+Coding
+A disclaimer: I don’t believe in memorizing templates without understanding what they do. While it helps to have a pattern you can apply to questions, you should really understand what the code is doing so you can easily adapt it in case the interviewer modifies the question.
+
+https://neetcode.io/—This site offers excellent video explanations for commonly asked interview questions. I strongly suggest working through the problems section-by-section to get more practice with a given topic. However, only high-quality practice will make this site worth it; I recommend attempting each problem independently for at least 10 minutes before watching the video solution.
+Dynamic programming patterns — the explanations here are sparse, but the author grouped different types of problems into categories so you can get more targeted practice.
+Partition subset problem — multiple well-written solutions for this classic problem.
+Binary search patterns — using a relatively simple template, you can solve almost every binary search question. The explanations here are well-written. Note, my Two Sigma interviewer wanted me to use Python’s built-in binary search (bisect.bisect_left) instead of writing binary search from scratch, so familiarize yourself with that library too.
+Sliding window problems — a collection of sliding window questions and a generalizable approach to solving them.
+This video on binary search gave me a different perspective on what binary search was doing and helped me understand the concept better.
+System Design
+I’m ranking these by increasing complexity; start from the top and work your way down.
+
+https://github.com/donnemartin/system-design-primer
+https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
+System Design by Alex Xu, Vol. 1 — a bit high-level, but gives you an idea on how to structure your answer and exposes you to the breadth of questions that might be asked.
+System Design by Alex Xu, Vol. 2 — the sequel to the first book that is more in-depth and asks harder questions. Several of my system design interview questions came directly from this book so I’d highly recommend working through these. In reality, your interviewer will likely ask followups that aren’t covered as in-depth as they’d like to see, so you’ll need to supplement your reading with tech blogs and whitepapers.
+Amazon’s DynamoDB White Paper. Understand Amazon’s K/V store architecture and how it services the top e-commerce site in the world.
+Company tech blogs. Don’t really understand eventual consistency, or CDNs, or rate limiting? Search for a keyword and “tech blog” and see how real companies do it in production.
+I’d like to add a caveat that if you’re applying for senior or staff level roles, you should be able to discuss these topics in-depth. An interviewer might ask you about the specifics of how your chosen database handles locking or data consistency, so I’d recommend really learning about the tools you choose.
+
+Interviewing Practice
+Sure, you can have your friends give you practice interviews, but don’t discount the importance of actually doing paid interview practice. I’d say this single-handedly helped me improve my system design interviews the fastest. Check out my post The best $1,000 I ever spent: Prepfully software engineering mock interviews for more information.
+
