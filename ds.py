@@ -4,10 +4,11 @@ from collections import deque
 from collections import defaultdict
 import heapq
 
+
 def list_comprehensions():
     items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
     updated_items = ['Item: {0}'.format(x) for x in items]
-    filtered_items = ['Item: {} {}'.format(x, x+'z') for x in items if x == 'a' or x == 'f']
+    filtered_items = ['Item: {} {}'.format(x, x + 'z') for x in items if x == 'a' or x == 'f']
 
 
 def list_type(mylist: list) -> list:
@@ -78,7 +79,6 @@ def heap_tests():
     heapq.heapify(input_list)
     print(input_list)
 
-
     input_list_inverted = [-x for x in input_list]
     heapq.heapify(input_list_inverted)
     print(input_list_inverted)
@@ -93,7 +93,7 @@ def heap_tests():
     heapq.heappush(heap_sort_list, -0.5)
     heapq.heappush(heap_sort_list, 8)
     while len(heap_sort_list) > 0:
-       print(heapq.heappop(heap_sort_list))
+        print(heapq.heappop(heap_sort_list))
 
 
 def dict_comprehensions():
@@ -101,10 +101,9 @@ def dict_comprehensions():
     print("Dictionary Comprehensions")
     keys = [x for x in range(10)]
     my_dict = {x: 'Value: {}'.format(x) for x in keys}
-    other_dict = {k: v for (k,v) in my_dict.items() if k < 5}
+    other_dict = {k: v for (k, v) in my_dict.items() if k < 5}
     print(other_dict)
 
 
 if __name__ == '__main__':
     dict_comprehensions()
-
