@@ -54,6 +54,8 @@ class DirectedGraph:
 
 
 class Subgraph:
+    """I could always use the DirectedGraph class for this too."""
+
     def __init__(self, initial_node):
         self.nodes = set()
         self.nodes.add(initial_node)
